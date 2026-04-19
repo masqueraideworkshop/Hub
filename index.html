@@ -6,9 +6,9 @@
     <title>Masqueraide Workshop Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* This handles the edge-to-edge centering */
         body { 
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('vectorstock 751427.jpg');
+            /* Updated to match your uploaded filename */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('vectorstock_751427.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -16,13 +16,14 @@
             color: #fafafa;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
 
         .bento-card { 
-            background: rgba(24, 24, 27, 0.9); /* Slightly more opaque for the new bg */
+            background: rgba(24, 24, 27, 0.85); 
             border: 1px solid #27272a; 
             transition: all 0.3s ease;
-            backdrop-filter: blur(2px); /* Soft blur effect for content legibility */
+            backdrop-filter: blur(4px);
         }
         .bento-card:hover { border-color: #dc2626; transform: translateY(-2px); }
     </style>
@@ -71,10 +72,10 @@
 
     </main>
 
-    <footer class="max-w-md w-full mt-6 pt-4 border-t border-zinc-900/50 text-center">
+    <footer class="max-w-md w-full mt-4 pt-4 border-t border-zinc-900/50 text-center">
         <h3 class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 mb-1">Contact Us</h3>
         <p class="text-sm font-medium text-zinc-200">masqueraideworkshop@gmail.com</p>
-        <p class="text-zinc-600 text-[8px] tracking-widest uppercase mt-6 font-semibold">
+        <p class="text-zinc-500 text-[8px] tracking-widest uppercase mt-4 font-semibold">
             &copy; 2026 Masqueraide Workshop LLC
         </p>
     </footer>
