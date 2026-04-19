@@ -6,20 +6,32 @@
     <title>Masqueraide Workshop Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #09090b; color: #fafafa; overflow: hidden; }
+        /* This handles the edge-to-edge centering */
+        body { 
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('vectorstock 751427.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #09090b; 
+            color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
         .bento-card { 
-            background: #18181b; 
+            background: rgba(24, 24, 27, 0.9); /* Slightly more opaque for the new bg */
             border: 1px solid #27272a; 
             transition: all 0.3s ease;
+            backdrop-filter: blur(2px); /* Soft blur effect for content legibility */
         }
         .bento-card:hover { border-color: #dc2626; transform: translateY(-2px); }
     </style>
 </head>
 <body class="p-4 flex flex-col items-center justify-center min-h-screen">
 
-    <header class="max-w-xl w-full mb-2 text-center -mt-12">
+    <header class="max-w-xl w-full mb-2 text-center -mt-16">
         <img src="Logopit_1610381027557.png" alt="Masqueraide Workshop" class="w-full max-w-[280px] mx-auto mb-1 object-contain">
-        <h2 class="text-zinc-300 uppercase tracking-[0.4em] text-sm font-black italic">The Central Hub</h2>
+        <h2 class="text-zinc-200 uppercase tracking-[0.4em] text-sm font-black italic">The Central Hub</h2>
     </header>
 
     <main class="max-w-md w-full space-y-2.5">
@@ -59,10 +71,10 @@
 
     </main>
 
-    <footer class="max-w-md w-full mt-4 pt-4 border-t border-zinc-900 text-center">
+    <footer class="max-w-md w-full mt-6 pt-4 border-t border-zinc-900/50 text-center">
         <h3 class="text-[9px] font-bold uppercase tracking-widest text-zinc-400 mb-1">Contact Us</h3>
         <p class="text-sm font-medium text-zinc-200">masqueraideworkshop@gmail.com</p>
-        <p class="text-zinc-500 text-[8px] tracking-widest uppercase mt-4 font-semibold">
+        <p class="text-zinc-600 text-[8px] tracking-widest uppercase mt-6 font-semibold">
             &copy; 2026 Masqueraide Workshop LLC
         </p>
     </footer>
