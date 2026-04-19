@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masqueraide Hub | Create & Capture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #09090b; color: #fafafa; }
+        .bento-card { 
+            background: #18181b; 
+            border: 1px solid #27272a; 
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover { border-color: #52525b; transform: translateY(-2px); }
+        .accent-red { color: #dc2626; }
+        .bg-accent-red { background-color: #dc2626; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <header class="max-w-4xl mx-auto mb-12 text-center">
+        <h1 class="text-4xl font-black tracking-tighter uppercase mb-2">Masqueraide <span class="accent-red">Workshop</span></h1>
+        <p class="text-zinc-500 uppercase tracking-[0.2em] text-xs font-bold">The Central Hub</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <a href="https://youtube.com" target="_blank" class="bento-card md:col-span-2 p-8 flex flex-col justify-between min-h-[240px] rounded-3xl relative overflow-hidden group">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-2">Master the Craft</h2>
+                <p class="text-zinc-400 max-w-xs">Over 120 technical tutorials on mask making and cinematic artistry.</p>
+            </div>
+            <div class="relative z-10 flex items-center gap-2 font-bold text-sm uppercase tracking-widest group-hover:accent-red transition">
+                Watch on YouTube <span>&rarr;</span>
+            </div>
+            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-red-900/20 rounded-full blur-3xl group-hover:bg-red-600/20 transition"></div>
+        </a>
+
+        <a href="https://tiktok.com" target="_blank" class="bento-card p-8 flex flex-col justify-between rounded-3xl group">
+            <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center mb-4">
+                <span class="text-xl">📱</span>
+            </div>
+            <div>
+                <h3 class="font-bold text-xl mb-1">Quick Tips</h3>
+                <p class="text-zinc-500 text-sm">Short-form BTS and SFX teasers.</p>
+            </div>
+            <div class="mt-4 text-xs font-bold uppercase tracking-widest group-hover:text-white text-zinc-500 transition">Follow &rarr;</div>
+        </a>
+
+        <div class="bento-card p-8 flex flex-col justify-between rounded-3xl md:row-span-1">
+            <h3 class="font-bold text-xl mb-2">The Studio</h3>
+            <p class="text-zinc-500 text-sm mb-6">Cinematic portraiture and professional boudoir photography.</p>
+            <button class="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-zinc-200 transition">View Portfolio</button>
+        </div>
+
+        <div class="md:col-span-2 grid grid-cols-2 gap-4">
+            <a href="#" class="bento-card p-6 rounded-3xl flex items-center justify-center gap-3 hover:bg-zinc-800">
+                <span class="font-bold">Instagram</span>
+            </a>
+            <a href="#" class="bento-card p-6 rounded-3xl flex items-center justify-center gap-3 hover:bg-zinc-800">
+                <span class="font-bold">Contact</span>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="max-w-4xl mx-auto mt-16 text-center text-zinc-600 text-xs tracking-widest uppercase">
+        &copy; 2026 Masqueraide Workshop & Studio
+    </footer>
+
+</body>
+</html>
